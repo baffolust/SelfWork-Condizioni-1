@@ -1,54 +1,43 @@
-let v1 = prompt (`Inserisci il voto preso al primo esame`);
+let temp1 = prompt (`Che temperatura fa oggi a Bari?`);
 
-if ( v1 >=0 && v1 < 18){
-    console.log(`Insufficiente`);
-}else if ( v1 >= 18 && v1 < 21) {
-    console.log(`Sufficiente`);
-}else if ( v1 >= 21 && v1 < 24) {
-    console.log(`Buono`);
-}else if ( v1 >= 24 && v1 < 27) {
-    console.log(`Distinto`);
-}else if ( v1 >= 27 && v1 <= 29) {
-    console.log(`Ottimo`);
-}else if ( v1 == 30) {
-    console.log(`Eccellente`);
+if ( temp1 < -10){
+    console.log(`copriti…ancora ti raffreddi`);
+}else if ( temp1 >= -10 && temp1 < 0) {
+    console.log(`non e’ tanto il freddo quanto l’umidità`);
+}else if ( temp1 >= 0 && temp1 < 20) {
+    console.log(`non ci sono piu’ le mezze stagioni`);
+}else if ( temp1 >= 20 && temp1 < 30) {
+    console.log(`mi dia una peroni sudata`);
+}else if ( temp1 >= 30 ){
+    console.log(`lu mare, lu sole, lu ientu`);
 }else {
-    console.log(`Voto non valido`);
+    console.log(`Non valido`);
 }
 
-let v2 = prompt (`Inserisci il voto preso al secondo esame`);
+let temp2 = prompt (`No... davvero che temperatura fa oggi a Bari?`);
 
 switch (true) {
-    case (v2 < 0):
-        console.log(`Voto Non Valido`);
+    case (temp2 < -10):
+        console.log(`copriti…ancora ti raffreddi`);
         break;
 
-    case (v2 < 18):
-        console.log(`Insufficiente`);
+    case (temp2 < 0):
+        console.log(`non e’ tanto il freddo quanto l’umidità`);
         break;
     
-    case (v2 < 21):
-        console.log(`Sufficiente`);
+    case (temp2 < 20):
+        console.log(`non ci sono piu’ le mezze stagioni`);
         break;
 
-    case (v2 < 24):
-        console.log(`Buono`);
+    case (temp2 < 30):
+        console.log(`mi dia una peroni sudata`);
         break;
 
-    case (v2 < 27):
-        console.log(`Distinto`);
+    case (temp2 >= 30):
+        console.log(`lu mare, lu sole, lu ientu`);
         break;
-
-    case (v2 <= 29):
-        console.log(`Ottimo`);
-        break;
-
-    case (v2 == 30):
-        console.log(`Eccellente`);
-        break;
-
 
     default:
-        console.log(`Voto non valido`);
+        console.log(`Non valido`);
         break;
 }
